@@ -40,13 +40,13 @@ h1, footer p {
 
 h1 {
   text-align: center;
-  padding: 0.5em 0;
+  padding: 0.5em;
 }
 
 /* main content */
 
 main {
-  padding: 2em 1;
+  padding: 2em;
 }
 
 main p, main li {
