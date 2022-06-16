@@ -31,11 +31,11 @@ pli {
 header, footer {
   background-color: teal;
   height: 10em;
-  padding: 2em;
+  padding: 1em;
 }
 
 h1, footer p {
-  margin: -70px;
+  margin: 70px;
 }
 
 h1 {
@@ -54,6 +54,6 @@ main p, main li {
 }
 
 img {
-  float: right
-  margin 1.2em 2em;
+  float: right;
+  margin :1.2px 0 2px 0;
 }
