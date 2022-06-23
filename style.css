@@ -3,4 +3,73 @@ h1{
 }
 section{
     display:flex;
+  margin: 50px;
+    width: 100em;
 }
+p.target{
+    border: 5px solid blue;
+    padding: 30px;
+    margin: 50px;
+    width: 200px;
+    height: 150px;
+    background: orange;
+  }
+  html {
+    font-family: 'Helvetica neue', Arial, 'sans serif';
+    font-size: 10px;
+  }
+  
+  body {
+    width: 80em;
+    margin: 0 auto;
+  }
+  
+  /* Typography */
+  
+  h1 {
+    font-size: 4em;
+  }
+  
+  h2 {
+    font-size: 3.2em;
+  }
+  
+  pli {
+    font-size: 1.7em;
+  }
+  
+  /*+++ more specific section styles +++*/
+  
+  /* header and footer */
+  
+  header {
+    background-color: rgb(128, 0, 17);
+    height: 10em;
+    padding: -20em;
+    
+  }
+  
+  h1, footer p {
+    margin: 70px;
+  }
+  
+  h1 {
+    text-align: center;
+    padding: 0.5em;
+  }
+  
+  /* main content */
+  
+  main {
+    padding: 2em;
+  }
+  
+  main p, main li {
+    line-height: 2;
+  }
+  
+  img {
+    float: right;
+    margin :1.2px 0 2px 0;
+  }
+  
