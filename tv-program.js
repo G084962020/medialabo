@@ -81,8 +81,6 @@ let data = {
   
   /////////////////// 課題3-2 はここから書き始めよう
   
-  console.log(data.list);
-
-  for(let s of data.g1.title){
-      console.log(s)
+  for(let s of data.list.g1.service.name){
+      console.log(s);
   }
