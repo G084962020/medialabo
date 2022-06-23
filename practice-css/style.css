@@ -28,8 +28,8 @@ pli {
 
 /* header and footer */
 
-header, footer {
-  background-color: teal;
+header {
+  background-color: rgb(128, 0, 17);
   height: 10em;
   padding: 1em;
 }
@@ -56,4 +56,12 @@ main p, main li {
 img {
   float: right;
   margin :1.2px 0 2px 0;
+}
+p.target {
+  border: 5px solid blue;
+  padding: 30px;
+  margin: 50px;
+  width: 200px;
+  height: 150px;
+  background: orange;
 }
