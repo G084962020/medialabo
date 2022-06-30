@@ -1,8 +1,9 @@
 div#placeholder {
 	display: grid; 
 	grid-template-columns: 1fr 1fr;
-    grid-template-rows: 250px 250px;
-    width: 400px;
+    grid-template-rows: 325px 325px;
+    width: 650px;
+	grid-gap: 30px;
 }
 
 div.faceAndName {
