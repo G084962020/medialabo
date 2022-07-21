@@ -24,7 +24,7 @@ function hantei() {
     kaisu++;
     let presult = document.querySelector('p#result');
     span = document.createElement('span');
-    presult.insertAdjacentElement('afterend',span);
+    presult.insertAdjacentElement('beforeend',span);
 
     span.textContent = (kaisu+"回目の予想："+yoso);
 
@@ -35,19 +35,19 @@ function hantei() {
         
     }
      else  if(kaisu >= 4){
-        let presult = document.querySelector('p#result');
+        
         span = document.createElement('span');
         span.textContent = ("答えは"+kotae+"でした．すでにゲームは終わっています");
         
 }
     else if(kotae > yoso){
-        let presult = document.querySelector('p#result');
+        
         span = document.createElement('span');
         span.textContent =("まちがい。答えはもっと大きいですよ");
         
     }
     else if(kotae < yoso){
-        let presult = document.querySelector('p#result');
+       
         span = document.createElement('span');
         span.textContent =("まちがい。答えはもっと小さいですよ");
         
