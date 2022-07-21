@@ -5,18 +5,19 @@ b.addEventListener('click', sendRequest);
 // 通信を開始する処理
 function sendRequest() {
 	//検索キーを取得
-	service = ; 
-	genre = ;
-	// URL を設定
-	//let url = 'https://www.nishita-lab.org/web-contents/jsons/test.json';
+	service = "g1"; 
+	//genres = 0000;
 
-	let url = 'https://www.nishita-lab.org/web-contents/jsons/nhk/'+{service}-{genre}-j.json
-	;
-	// 通信開始
+	// URL を設定
+
+	let url = 'https://www.nishita-lab.org/web-contents/jsons/nhk/service-genre-j.json';
+    //let url = 'https://www.nishita-lab.org/web-contents/jsons/nhk/g1-0000-j.json';
+	//通信開始
 	axios.get(url)
 		.then(showResult)
 		.catch(showError)
 		.then(finish);
+		
 }
 
 // 通信が成功した時の処理
