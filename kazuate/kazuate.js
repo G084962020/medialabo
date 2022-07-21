@@ -26,7 +26,7 @@ function greeting() {
     kaisu++;
     let presult = document.querySelector('p#result');
     span = document.createElement('span');
-    presult.insertAdjacentElement('afterend',span);
+    presult.insertAdjacentElement('beforeend',span);
 
 
     span.textContent = (kaisu+"回目の予想："+yoso+"  ");
@@ -41,6 +41,7 @@ function greeting() {
         li.textContent = ("正解です。おめでとう！");
         
     }
+<<<<<<< HEAD
      if(kaisu >= 4){
         li.textContent = ("答えは"+kotae+"でした．すでにゲームは終わっています");
         
@@ -51,6 +52,24 @@ function greeting() {
     }
     else if(kotae < yoso){
         li.textContent =("まちがい。答えはもっと小さいですよ");
+=======
+     else  if(kaisu >= 4){
+        
+        span = document.createElement('span');
+        span.textContent = ("答えは"+kotae+"でした．すでにゲームは終わっています");
+        
+}
+    else if(kotae > yoso){
+        
+        span = document.createElement('span');
+        span.textContent =("まちがい。答えはもっと大きいですよ");
+        
+    }
+    else if(kotae < yoso){
+       
+        span = document.createElement('span');
+        span.textContent =("まちがい。答えはもっと小さいですよ");
+>>>>>>> 052ac6edd91a3ddce998d84adeac29826370dc16
         
     }
 }
