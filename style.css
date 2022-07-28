@@ -1,9 +1,15 @@
 h1{
     color:aqua;
 }
+h2{
+  color:aqua;
+}
 section{
-    display:flex;
-  margin: 50px;
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 100px 100px;
+    grid-gap: 50px;
+    margin: 50px;
     width: 100em;
 }
 p.target{
@@ -17,6 +23,7 @@ p.target{
   html {
     font-family: 'Helvetica neue', Arial, 'sans serif';
     font-size: 10px;
+    color:rgb(8, 8, 8)
   }
   
   body {
@@ -27,15 +34,15 @@ p.target{
   /* Typography */
   
   h1 {
-    font-size: 4em;
+    font-size: 4.5em;
   }
   
   h2 {
-    font-size: 3.2em;
+    font-size: 3em;
   }
   
   pli {
-    font-size: 1.7em;
+    font-size: 2em;
   }
   
   /*+++ more specific section styles +++*/
@@ -50,7 +57,7 @@ p.target{
   }
   
   h1, footer p {
-    margin: 70px;
+    margin: 40px;
   }
   
   h1 {
@@ -72,4 +79,6 @@ p.target{
     float: right;
     margin :1.2px 0 2px 0;
   }
-  
+  h3 {
+    font-size: 2.7em;
+  }
