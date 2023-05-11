@@ -39,7 +39,7 @@ function greeting() {
 
     if(kotae == yoso){
         li.textContent = ("正解です。おめでとう！");
-        
+        console.log = ("正解です。おめでとう！");
     }
     else if(kaisu >= 4){
         li.textContent = ("答えは"+kotae+"でした．すでにゲームは終わっています");
