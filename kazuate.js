@@ -1,4 +1,6 @@
 // 答え
+
+
 let kotae = Math.floor(Math.random()*10) + 1;
 console.log('答え: ' + kotae);      // デバッグ用
 
@@ -12,6 +14,7 @@ hantei();
 
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
+    //li2.remove();
     let b = document.querySelector('#print');
     b.addEventListener('click', greeting);
 
@@ -31,12 +34,15 @@ function greeting() {
 
     span.textContent = (kaisu+"回目の予想："+yoso+"  ");
 
+    
     let presult2 = document.querySelector('p#result2');
     li = document.createElement('li');
     presult2.insertAdjacentElement('afterend',li);
+    
+    
 
-
-
+    for(let i=0; i<1; i++){
+        
     if(kotae == yoso){
         li.textContent = ("正解です。おめでとう！");
         console.log = ("正解です。おめでとう！");
@@ -53,7 +59,12 @@ function greeting() {
         li.textContent =("まちがい。答えはもっと小さいですよ");
         
     }
+
+   
+     
 }
+
+
     //        ページに表示する方法はまだ習っていないので
     //        判定結果はコンソールに出力すること
 }

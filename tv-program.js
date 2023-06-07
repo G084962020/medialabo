@@ -82,10 +82,23 @@ let data = {
   /////////////////// 課題3-2 はここから書き始めよう
   
 
+  let p = document.querySelector('p'); 
+ let span = document.createElement('span');
+ let li2 = document.createElement('li');
+  //type.insertAdjacentElement('afterend', li);
+
   for(let s of data.list.g1){
-      for(let o of data.list.g1){
-    console.log(s.service.name+":"+o.title);
-  }
-  }
+    for(let o of data.list.g1){
+  // for(let s of data.list.g1){
+  span.textContent=(s.service.name+":"+s.title);
+  p.insertAdjacentElement('afterend', span);
+  
+  console.log(s.service.name+":"+s.title);
+  
+}
+}
 
   
+  
+
+
